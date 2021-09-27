@@ -7,13 +7,29 @@ public class FightSong {
      */
     public static void goTeam() {
         // Add any print statements you think should go in this method.
-
+        System.out.println("Go, team, go!");
+        System.out.println("You can do it.");
     }
-
+    public static void bestWest() {
+        System.out.println("You're the best,");
+        System.out.println("In the West.");
+    }
     // Create any additional methods you need in this space in order to fulfill the requirements of the program
-
+    public static void newStanza(){
+        System.out.println(" ");
+    }
     public static void main(String[] args) {
         // No print statements should be in here, only method calls.
+        goTeam();
+        newStanza();
+        goTeam();
+        bestWest();
+        goTeam();
+        newStanza();
+        goTeam();
+        bestWest();
+        goTeam();
+        newStanza();
 
     }
 }
