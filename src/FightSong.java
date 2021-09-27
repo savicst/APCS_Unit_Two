@@ -30,6 +30,7 @@ public class FightSong {
         bestWest();
         goTeam();
         newStanza();
+        goTeam();
 
     }
 }
