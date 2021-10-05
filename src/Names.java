@@ -24,5 +24,11 @@ public class Names {
         int lastOfLast = last.length() - 1;
         String lastOfLasst = last.substring(lastOfLast);
         System.out.println(first.indexOf(lastOfLasst));
+
+        int halfOfFirst = first.length() /2 ;
+        int halfOfLast = last.length() / 2 ;
+       String newFirst = first.substring(0,halfOfFirst) + last.substring(halfOfLast,last.length());
+       String newLast = last.substring(0,halfOfLast) + first.substring(halfOfFirst,first.length() );
+        System.out.println(newFirst + " " + newLast);
     }
 }
