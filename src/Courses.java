@@ -9,6 +9,6 @@ public class Courses {
         System.out.println("Department: "+ str.substring(0,firSpace));
         int secSpace = str.indexOf(" ", firSpace+1);
         System.out.println("Course Number: " + str.substring(firSpace+1, secSpace));
-        System.out.println("Title: " + str.substring(secSpace));
+        System.out.println("Title: " + str.substring(secSpace+1));
     }
 }
