@@ -48,7 +48,7 @@ public class StringMethodsTests {
     @Test
     void CoursesTestEcon() throws IOException {
         System.setIn(new FileInputStream("data_files/courses.txt"));
-        // Courses.main(null);
+        Courses.main(null);
         assertTrue(outContent.toString().contains("Department: ECON\nCourse Number: 203\nTitle: Advanced Macroeconomics"));
     }
 }
