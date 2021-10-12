@@ -7,9 +7,9 @@ public class TemperatureDifference {
      * @param temp2 - an int temperature value
      * @return the absolute value of the difference between the two temps. Make sure to change the 0
      */
-    public static int calculateDifference(int temp1, int temp2) {
+    public static int calculateDifference(int tempOne, int tempTwo) {
 
-        return 0;
+        return Math.abs(tempOne - tempTwo);
     }
 
     public static void main(String[] args) {
@@ -17,9 +17,13 @@ public class TemperatureDifference {
         Scanner scan = new Scanner(System.in);
 
         // Get the two temperatures from the user as input
-
+        System.out.print("Enter the first temperature: ");
+        int tempOne = scan.nextInt();
+        System.out.print("Enter the second temperature: ");
+        int tempTwo = scan.nextInt();
         // Call the calculateDifference method and save the result in a variable.
-
+        int difference = calculateDifference(tempOne,tempTwo);
         // Print out the information to the user
+        System.out.println("The temperature changed " + difference + " degrees.");
     }
 }
