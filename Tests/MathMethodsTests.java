@@ -46,23 +46,23 @@ public class MathMethodsTests {
 
    }
 
-//    @Test
-//    void DistanceTests() {
-//        assertEquals(7.211102550927978, Distance.distance(2, -3, -4, 1), 0.01);
-//        assertEquals(10.0, Distance.distance(-4, -3, 4, 3), 0.1);
-//    }
+   @Test
+    void DistanceTests() {
+       assertEquals(7.211102550927978, Distance.distance(2, -3, -4, 1), 0.01);
+        assertEquals(10.0, Distance.distance(-4, -3, 4, 3), 0.1);
+   }
 
 
-//    @Test
-//    void RandomNumbersTest() {
-//        boolean inCorrectRange = true;
-//        for (int i=0; i<1000; i++) {
-//            int num = RandomNumbers.getRandom();
-//            if (num < 0 || num > 37) {
-//                inCorrectRange = false;
-//                break;
-//            }
-//        }
-//        assertTrue(inCorrectRange);
-//    }
+    @Test
+    void RandomNumbersTest() {
+        boolean inCorrectRange = true;
+       for (int i=0; i<1000; i++) {
+            int num = RandomNumbers.getRandom();
+            if (num < 0 || num > 37) {
+                inCorrectRange = false;
+                break;
+            }
+        }
+        assertTrue(inCorrectRange);
+    }
 }
